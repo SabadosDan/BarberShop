@@ -5,11 +5,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Mobile"
     Shell.FlyoutBehavior="Disabled"
-    Title="Mobile">
+    Title="BarberShop"
+    BackgroundColor="#001F54"
+    TitleColor="White">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" 
+        />
+    <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate local:RegisterPage}"
+        Route="RegisterPage" 
+        />
 
 </Shell>

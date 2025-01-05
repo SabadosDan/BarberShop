@@ -1,0 +1,1 @@
+C:\Programe Codat\GitRepository\BarberShop\Mobile\Mobile.csproj;x64
