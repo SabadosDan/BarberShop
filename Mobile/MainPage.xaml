@@ -11,7 +11,7 @@
                HeightRequest="300"
                WidthRequest="300"
                HorizontalOptions="Center" />
-        <Button Text="Vezi servicii"
+        <Button Text="Vezi frizerii si serviciile lor"
                 BackgroundColor="#512BD4"
                 TextColor="White"
                 Clicked="OnVeziServiciiClicked" />
@@ -19,12 +19,6 @@
                 BackgroundColor="#FF5733"
                 TextColor="White"
                 Clicked="OnContacteazaClicked" />
-        <Button
-            Text="Register"
-            BackgroundColor="#1E90FF"
-            TextColor="White"
-            Clicked="OnRegisterClicked"
-            VerticalOptions="CenterAndExpand" />
     </StackLayout>
     
 </ContentPage>

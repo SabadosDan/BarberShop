@@ -522,3 +522,5 @@ C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\refint\WebAPI
 C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\WebAPI.RazorAssemblyInfo.cache
+C:\Programe Codat\GitRepository\BarberShop\WebAPI\obj\Debug\net8.0\WebAPI.RazorAssemblyInfo.cs

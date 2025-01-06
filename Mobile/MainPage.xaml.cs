@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Controls;
+using Mobile.Utils;
 
 namespace Mobile
 {
@@ -11,15 +12,16 @@ namespace Mobile
             InitializeComponent();
         }
 
-
-        private async void OnRegisterClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new RegisterPage());
-        }
-
         private void OnVeziServiciiClicked(object sender, EventArgs e)
         {
-            
+            if (sessionManager.IsLoggedIn)
+            {
+                Navigation.PushAsync(new ServicesPage());
+            }
+            else
+            {
+                Navigation.PushAsync(new LoginPage());
+            }
         }
 
         private void OnContacteazaClicked(object sender, EventArgs e)
