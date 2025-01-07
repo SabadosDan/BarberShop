@@ -1050,6 +1050,14 @@ C:\gitProjects\facultate\.NET\Frizerie\Mobile\obj\Debug\net8.0-android\android\c
 C:\gitProjects\facultate\.NET\Frizerie\Mobile\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
 C:\gitProjects\facultate\.NET\Frizerie\Mobile\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
 C:\gitProjects\facultate\.NET\Frizerie\Mobile\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.runtimeconfig.json
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.dll
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.pdb
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile.apk
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile.aab
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.aab
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.apk
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.apk.idsig
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\build.props
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\adb.props
@@ -1167,14 +1175,6 @@ C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobil
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobile.AssemblyInfo.cs
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobile.csproj.CoreCompileInputs.cache
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobile.sourcelink.json
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.runtimeconfig.json
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.dll
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\Mobile.pdb
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile.apk
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile.aab
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.aab
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.apk
-C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-android\com.companyname.mobile-Signed.apk.idsig
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\XamlC.stamp
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobile.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-android\Mobile.pdb

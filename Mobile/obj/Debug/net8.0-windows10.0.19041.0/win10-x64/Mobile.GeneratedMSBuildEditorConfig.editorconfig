@@ -12,6 +12,24 @@ build_property.ProjectDir = C:\Programe Codat\GitRepository\BarberShop\Mobile\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AddBarberPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AddBarberPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddBarberPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddBarberPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AddServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AddServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddServicePage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AdminBarbersDashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AdminBarbersDashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminBarbersDashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminBarbersDashboard.xaml
+
 [C:/Programe Codat/GitRepository/BarberShop/Mobile/AdminPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AdminPage.xaml
@@ -29,6 +47,24 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/BarbersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.BarbersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BarbersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BarbersPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/EditBarberPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.EditBarberPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditBarberPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditBarberPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/EditServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.EditServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditServicePage.xaml
 
 [C:/Programe Codat/GitRepository/BarberShop/Mobile/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -65,3 +101,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.ServicesPage.xaml
 build_metadata.AdditionalFiles.TargetPath = ServicesPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ServicesPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/ShowBarberServices.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.ShowBarberServices.xaml
+build_metadata.AdditionalFiles.TargetPath = ShowBarberServices.xaml
+build_metadata.AdditionalFiles.RelativePath = ShowBarberServices.xaml

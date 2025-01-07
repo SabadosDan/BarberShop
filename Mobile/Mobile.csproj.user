@@ -8,7 +8,25 @@
     <DefaultDevice>pixel_5_-_api_34</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="AddBarberPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="AddServicePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="AdminBarbersDashboard.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="AdminPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="BarbersPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="EditBarberPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="EditServicePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="LoginPage.xaml">
@@ -18,6 +36,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="ServicesPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="ShowBarberServices.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

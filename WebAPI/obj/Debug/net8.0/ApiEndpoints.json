@@ -343,6 +343,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebAPI.Controllers.ServicesController",
+    "Method": "GetServicesByBarberId",
+    "RelativePath": "api/Services/barber/{barberId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "barberId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -3,17 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.AdminPage"
              Title="Admin">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Admin Dashboard!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <Grid RowDefinitions="*, Auto, Auto" Padding="20">
 
-        <Button 
-            Text="Logout" 
-            BackgroundColor="Red" 
-            TextColor="White" 
-            Margin="0,20"
-            Clicked="OnLogoutClicked"/>
-    </VerticalStackLayout>
+        <Label Text="Welcome to Admin Dashboard!"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               Grid.Row="0"/>
+
+        <VerticalStackLayout HorizontalOptions="Center" Grid.Row="1">
+            <Button Text="Vezi Frizerii" Clicked="OnViewBarbersClicked" />
+            <Button Text="Adaugă frizer" Clicked="OnAddBarberClicked" />
+            <Button Text="Adaugă Serviciu la frizer" Clicked="OnAddSericeToBarberClicked" />
+        </VerticalStackLayout>
+
+        <Button Text="Logout" 
+                BackgroundColor="Red" 
+                TextColor="White" 
+                Margin="0,20"
+                Clicked="OnLogoutClicked" 
+                Grid.Row="2" 
+                HorizontalOptions="Center"/>
+    </Grid>
 </ContentPage>

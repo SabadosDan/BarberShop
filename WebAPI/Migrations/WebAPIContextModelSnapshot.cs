@@ -92,7 +92,7 @@ namespace WebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BarberId")
+                    b.Property<int?>("BarberId")
                         .HasColumnType("int");
 
                     b.Property<TimeSpan>("Duration")
@@ -116,9 +116,7 @@ namespace WebAPI.Migrations
                 {
                     b.HasOne("WebAPI.Models.Barber", "Barber")
                         .WithMany("Services")
-                        .HasForeignKey("BarberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("BarberId");
 
                     b.Navigation("Barber");
                 });

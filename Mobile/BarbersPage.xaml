@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.BarbersPage"
+             Title="Barbers">
+    <StackLayout Padding="10" VerticalOptions="StartAndExpand">
+        <ListView x:Name="BarbersListView" ItemTapped="OnSeeServicesClicked" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Spacing="10">
+                            <ScrollView>
+                                <StackLayout>
+                                    <Label Text="{Binding FirstName}" FontSize="18" FontAttributes="Bold" />
+                                    <Label Text="{Binding LastName}" FontSize="16"  FontAttributes="Bold"/>
+                                    <Label Text="{Binding Specialization}" FontSize="14" TextColor="#001F54" />
+                                    <Label Text="{Binding PhoneNumber}" FontSize="14" TextColor="#001F54" />
+                                    <Button Text="See Services" BackgroundColor="#001F54" TextColor="White" HorizontalOptions="Center"  Clicked="OnSeeServicesClicked"/>
+                                </StackLayout>
+                            </ScrollView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

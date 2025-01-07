@@ -37,10 +37,46 @@ namespace WebAPI.Controllers
             return service;
         }
 
+        // GET: api/Services/barber/barberId
+        [HttpGet("barber/{barberId}")]
+        public async Task<IActionResult> GetServicesByBarberId(int barberId)
+        {
+            try
+            {
+                var services = await _context.Services
+                                             .Where(s => s.BarberId == barberId)
+                                             .ToListAsync();
+
+                if (services == null || !services.Any())
+                {
+                    return NotFound(new { Message = "No services found for the specified barber." });
+                }
+
+                return Ok(services);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = "An error occurred.", Error = ex.Message });
+            }
+        }
+
+
         // POST: api/Services
         [HttpPost]
         public async Task<ActionResult<Service>> PostService(Service service)
         {
+
+            if (service == null || service.BarberId == null)
+            {
+                return BadRequest("Service or BarberId is invalid.");
+            }
+
+            var barber = await _context.Barbers.FindAsync(service.BarberId);
+            if (barber == null)
+            {
+                return BadRequest("Barber not found.");
+            }
+
             _context.Services.Add(service);
             await _context.SaveChangesAsync();
 

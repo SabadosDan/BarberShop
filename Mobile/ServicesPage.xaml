@@ -4,11 +4,10 @@
              x:Class="Mobile.ServicesPage"
              Title="ServicesPage">
     <VerticalStackLayout>
-        <Label 
-            Text="frizerii nostri:"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
+        
+        <Button Text="Vezi Frizerii" Clicked="OnViewBarbersClicked" />
+        
+        
         <Button 
             Text="Logout" 
             BackgroundColor="Red" 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.ShowBarberServices"
+             Title="Barber Services">
+    <StackLayout Padding="10">
+        
+        <CollectionView x:Name="ServicesCollectionView" 
+                        SelectionMode="Multiple" 
+                        Margin="10">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Padding="10" Spacing="5">
+                        <Label Text="{Binding Name}" FontSize="16" />
+                        <Label Text="{Binding Price, StringFormat='Price: {0} Lei'}" FontSize="14" TextColor="#001F54"/>
+                        <Label Text="{Binding Duration, StringFormat='Duration: {0} min'}" FontSize="14" TextColor="#001F54"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Book Selected Services" 
+                BackgroundColor="#001F54" 
+                TextColor="White" 
+                Padding="10" 
+                Margin="20" 
+                Clicked="OnBookServicesClicked" />
+    </StackLayout>
+</ContentPage>

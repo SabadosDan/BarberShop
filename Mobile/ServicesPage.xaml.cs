@@ -16,4 +16,18 @@ public partial class ServicesPage : ContentPage
         await Navigation.PushAsync(new LoginPage());
     }
 
+    private async void OnViewBarbersClicked(object sender, EventArgs e)
+    {
+        if (sessionManager.Role == "Admin")
+        {
+
+            await Navigation.PushAsync(new AdminBarbersDashboard());
+        }
+        else
+        {
+            await Navigation.PushAsync(new BarbersPage());
+        }
+    }
+
+
 }
