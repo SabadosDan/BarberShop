@@ -78,6 +78,9 @@
 	  <MauiXaml Update="AdminPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="AppointmentsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="BarbersPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

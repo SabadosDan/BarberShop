@@ -22,6 +22,7 @@ C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimula
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Essentials.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Microsoft.Maui.Graphics.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Newtonsoft.Json.dll
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\Plugin.LocalNotification.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\System.Diagnostics.DiagnosticSource.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-ios\iossimulator-x64\ca\Microsoft.Maui.Controls.resources.dll
@@ -274,6 +275,10 @@ C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimula
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.stamp
+C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\barbershop_logo.png
+C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -286,10 +291,6 @@ C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimula
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\barbershop_logo.png
-C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
-C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
-C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.stamp
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.outputs
 C:\Programe Codat\GitRepository\BarberShop\Mobile\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist

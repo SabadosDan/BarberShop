@@ -3,16 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.ServicesPage"
              Title="ServicesPage">
-    <VerticalStackLayout>
-        
-        <Button Text="Vezi Frizerii" Clicked="OnViewBarbersClicked" />
-        
-        
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+
+        <Button Text="See Barbers"
+            Clicked="OnViewBarbersClicked"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
+            Margin="0,20"/>
+
+        <Button Text="See your bookings"
+            Clicked="OnViewAppointmentsClicked"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            Margin="0,20"/>
+
         <Button 
             Text="Logout" 
             BackgroundColor="Red" 
             TextColor="White" 
             Margin="0,20"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"
             Clicked="OnLogoutClicked"/>
     </VerticalStackLayout>
 </ContentPage>

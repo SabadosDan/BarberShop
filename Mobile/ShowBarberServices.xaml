@@ -10,12 +10,12 @@
 
         <TimePicker x:Name="TimePicker" />
 
-        <CollectionView x:Name="ServicesCollectionView" SelectionMode="Multiple">
+        <CollectionView x:Name="ServicesCollectionView" SelectionMode="Multiple" SelectionChanged="OnSelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
                         <Label Text="{Binding Name}" />
-                        <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" />
+                        <Label Text="{Binding Price, StringFormat='Price: {0} Lei'}" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

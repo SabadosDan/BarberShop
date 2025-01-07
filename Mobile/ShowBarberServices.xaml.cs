@@ -1,4 +1,6 @@
-﻿using Mobile.Utils;
+﻿using Mobile.Models;
+using Mobile.Utils;
+using Plugin.LocalNotification;
 using WebAPI.Models;
 
 namespace Mobile
@@ -74,6 +76,7 @@ namespace Mobile
                         ClientPhone = client.PhoneNumber,
                        Services = serviceNames,
                         Price = totalPrice,
+                        ClientId = sessionManager.UserId,
                         IsReserved = true
                     };
 
@@ -82,6 +85,8 @@ namespace Mobile
                     if (isBooked)
                     {
                         await DisplayAlert("Success", "Your appointment has been successfully booked.", "OK");
+                        var notificationService = new NotificationsClass();
+                        notificationService.ScheduleNotification(appointment.DateTime);
                     }
                     else
                     {

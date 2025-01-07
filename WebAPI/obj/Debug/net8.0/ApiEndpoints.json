@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "WebAPI.Controllers.AppointmentsController",
+    "Method": "GetAppointmentsByClientId",
+    "RelativePath": "api/appointments/{clientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.AppointmentsController",
     "Method": "CheckAvailability",
     "RelativePath": "api/appointments/available",
     "HttpMethod": "GET",

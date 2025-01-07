@@ -7,18 +7,17 @@ namespace Mobile.Models
     {
         public void ScheduleNotification(DateTime appointmentDateTime)
         {
-            // Calculăm cu o zi înainte de programare
-            DateTime notificationDateTime = appointmentDateTime.AddDays(-1);
-
             
+            DateTime notificationDateTime = appointmentDateTime.AddDays(-1);
 
             if (notificationDateTime > DateTime.Now)
             {
                 var notification = new NotificationRequest
                 {
                     NotificationId = 1,
-                    Title = "Reminder: Appointment",
-                    Description = "You have an appointment tomorrow!",
+                    Title = "Reminder: Barbershop D&A",
+                    Description = "Salutare, nu uita ca maine ai o programare la noi la salon," +
+                    "Te asteptam cu drag!",
                     BadgeNumber=42,
                     Schedule = new NotificationRequestSchedule
                     {

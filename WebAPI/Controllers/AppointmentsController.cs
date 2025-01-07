@@ -70,5 +70,17 @@ namespace WebAPI.Controllers
 
             return Ok(appointments);
         }
+
+        [HttpGet("{clientId}")]
+        public async Task<IActionResult> GetAppointmentsByClientId(int clientId)
+        {
+            var appointments = await _context.Appointment
+                                              .Where(a => a.ClientId == clientId)
+                                              .Include(a => a.Barber) 
+                                              .ToListAsync();
+
+            return Ok(appointments);
+        }
+
     }
 }

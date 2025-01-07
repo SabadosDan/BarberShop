@@ -33,6 +33,9 @@ namespace WebAPI.Migrations
                     b.Property<int?>("BarberId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ClientId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ClientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -57,6 +60,8 @@ namespace WebAPI.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BarberId");
+
+                    b.HasIndex("ClientId");
 
                     b.ToTable("Appointment");
                 });
@@ -157,7 +162,13 @@ namespace WebAPI.Migrations
                         .WithMany()
                         .HasForeignKey("BarberId");
 
+                    b.HasOne("WebAPI.Models.Clients", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId");
+
                     b.Navigation("Barber");
+
+                    b.Navigation("Client");
                 });
 
             modelBuilder.Entity("WebAPI.Models.Service", b =>

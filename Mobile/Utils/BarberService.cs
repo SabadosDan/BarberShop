@@ -86,5 +86,28 @@ namespace Mobile.Utils
             return response.IsSuccessStatusCode;
         }
 
+        public async Task<List<Appointment>> GetAppointmentsByClientIdAsync(int clientId)
+        {
+            try
+            {
+                var response = await _httpClient.GetAsync($"{ApiUrl}/api/appointments/{clientId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var appointments = await response.Content.ReadFromJsonAsync<List<Appointment>>();
+                    return appointments;
+                }
+                else
+                {
+                    throw new Exception("Failed to load appointments.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occurred while fetching appointments: " + ex.Message);
+            }
+        }
+
+
     }
 }

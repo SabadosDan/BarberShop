@@ -42,6 +42,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Mobile.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AppointmentsPage.xaml
+
 [C:/Programe Codat/GitRepository/BarberShop/Mobile/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AppShell.xaml

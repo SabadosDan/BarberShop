@@ -1,4 +1,6 @@
-﻿namespace WebAPI.Models
+﻿using Mobile.Models;
+
+namespace WebAPI.Models
 {   
         public class Appointment
         {
@@ -18,10 +20,22 @@
             public List<string> Services { get; set; }
 
 
-            public decimal Price { get; set; }
-            public bool IsReserved { get; set; }
+        public string ServicesString
+        {
+            get
+            {
+                return string.Join(", ", Services); 
+            }
         }
-    } 
+
+        public decimal Price { get; set; }
+            public bool IsReserved { get; set; }
+
+            public int? ClientId { get; set; }
+            public Clients? Client { get; set; }
+
+    }
+} 
 
 
 

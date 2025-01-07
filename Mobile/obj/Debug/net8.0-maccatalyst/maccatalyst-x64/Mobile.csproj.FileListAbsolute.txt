@@ -22,6 +22,7 @@ C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\m
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
+C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Plugin.LocalNotification.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.Diagnostics.DiagnosticSource.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Programe Codat\GitRepository\BarberShop\Mobile\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ca\Microsoft.Maui.Controls.resources.dll

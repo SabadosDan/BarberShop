@@ -20,8 +20,11 @@
 
             public decimal Price { get; set; }
             public bool IsReserved { get; set; }
-        }
-    } 
+
+            public int? ClientId { get; set; }
+            public Clients? Client { get; set; }
+    }
+} 
 
 
 
