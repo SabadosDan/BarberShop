@@ -58,7 +58,7 @@ public partial class AdminBarbersDashboard : ContentPage
     {
         using (var client = new HttpClient())
         {
-            var response = await client.DeleteAsync($"{ApiUrl}/api/Barbers");
+            var response = await client.DeleteAsync($"{ApiUrl}/api/Barbers/{barberId}");
             if (response.IsSuccessStatusCode)
             {
                 await DisplayAlert("Success", "Barber deleted successfully", "OK");

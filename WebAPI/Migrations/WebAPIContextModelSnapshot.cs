@@ -22,6 +22,45 @@ namespace WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WebAPI.Models.Appointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BarberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClientPhone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsReserved")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Services")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberId");
+
+                    b.ToTable("Appointment");
+                });
+
             modelBuilder.Entity("WebAPI.Models.Barber", b =>
                 {
                     b.Property<int>("Id")
@@ -110,6 +149,15 @@ namespace WebAPI.Migrations
                     b.HasIndex("BarberId");
 
                     b.ToTable("Services");
+                });
+
+            modelBuilder.Entity("WebAPI.Models.Appointment", b =>
+                {
+                    b.HasOne("WebAPI.Models.Barber", "Barber")
+                        .WithMany()
+                        .HasForeignKey("BarberId");
+
+                    b.Navigation("Barber");
                 });
 
             modelBuilder.Entity("WebAPI.Models.Service", b =>

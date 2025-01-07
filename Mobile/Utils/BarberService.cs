@@ -68,6 +68,23 @@ namespace Mobile.Utils
             }
         }
 
+        public async Task<bool> CheckAvailability(int barberId, DateTime dateTime)
+        {
+            var response = await _httpClient.GetAsync($"{ApiUrl}/api/appointments/available?barberId={barberId}&dateTime={dateTime}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var isAvailable = await response.Content.ReadFromJsonAsync<bool>();
+                return isAvailable;
+            }
+            return false;
+        }
+        public async Task<bool> BookAppointment(Appointment appointment)
+        {
+            var response = await _httpClient.PostAsJsonAsync($"{ApiUrl}/api/appointments", appointment);
+
+            return response.IsSuccessStatusCode;
+        }
 
     }
 }

@@ -8,12 +8,20 @@ namespace Mobile
         private BarberService barberService;
         private int BarberId { get; set; }
 
+        private HttpClient httpClient;
+        private ClientManager clientManager;
         public ShowBarberServices(int barberId)
         {
             InitializeComponent();
 
             BarberId = barberId;
             barberService = new BarberService();
+            clientManager = new ClientManager();
+            BindingContext = new
+            {
+                MinimumDate = DateTime.Now,
+                MaximumDate = DateTime.Now.AddMonths(1) // Poți ajusta după nevoi
+            };
             LoadServices(barberId);
         }
 
@@ -25,6 +33,7 @@ namespace Mobile
 
                 if (services.Any())
                 {
+
                     ServicesCollectionView.ItemsSource = services;
                 }
                 else
@@ -39,27 +48,68 @@ namespace Mobile
         }
 
 
-
         private async void OnBookServicesClicked(object sender, EventArgs e)
         {
             var selectedServices = ServicesCollectionView.SelectedItems.Cast<Service>().ToList();
 
             if (selectedServices.Any())
             {
-                
-                string servicesList = string.Join(", ", selectedServices.Select(s => s.Name));
+                DateTime selectedDate = DatePicker.Date;
+                TimeSpan selectedTime = TimePicker.Time;
+                DateTime selectedDateTime = selectedDate.Add(selectedTime);
 
-               
-                await DisplayAlert("Selected Services", $"You selected: {servicesList}", "OK");
 
-                // Aici poți trimite selecția spre server pentru a rezerva serviciile
-                // await SendReservationToServer(selectedServices);
+                bool isAvailable = await barberService.CheckAvailability(BarberId, selectedDateTime);
+
+                if (isAvailable)
+                {
+                    decimal totalPrice = selectedServices.Sum(service => service.Price);
+                    List<string> serviceNames = selectedServices.Select(service => service.Name).ToList();
+                    var client = await clientManager.GetClientByIdAsync(sessionManager.UserId);
+                    Appointment appointment = new Appointment
+                    {
+                        BarberId = BarberId,
+                        DateTime = selectedDateTime,
+                        ClientName = client.FirstName,
+                        ClientPhone = client.PhoneNumber,
+                       Services = serviceNames,
+                        Price = totalPrice,
+                        IsReserved = true
+                    };
+
+                    bool isBooked = await barberService.BookAppointment(appointment);
+
+                    if (isBooked)
+                    {
+                        await DisplayAlert("Success", "Your appointment has been successfully booked.", "OK");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "There was an issue booking your appointment.", "OK");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Not Available", "This time slot is already booked.", "OK");
+                }
             }
             else
             {
-               
                 await DisplayAlert("Error", "Please select at least one service.", "OK");
             }
         }
+
+
+        private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedServices = ServicesCollectionView.SelectedItems.Cast<Service>().ToList();
+            decimal totalPrice = selectedServices.Sum(service => service.Price);
+
+            TotalPriceLabel.Text = $"Total: {totalPrice} Lei";
+        }
+
+
+
     }
 }
+

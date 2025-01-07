@@ -3,27 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.ShowBarberServices"
              Title="Barber Services">
-    <StackLayout Padding="10">
-        
-        <CollectionView x:Name="ServicesCollectionView" 
-                        SelectionMode="Multiple" 
-                        Margin="10">
+    <StackLayout Padding="20">
+        <Label Text="Select Services" FontSize="24" HorizontalOptions="Center" />
+
+        <DatePicker x:Name="DatePicker" />
+
+        <TimePicker x:Name="TimePicker" />
+
+        <CollectionView x:Name="ServicesCollectionView" SelectionMode="Multiple">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout Padding="10" Spacing="5">
-                        <Label Text="{Binding Name}" FontSize="16" />
-                        <Label Text="{Binding Price, StringFormat='Price: {0} Lei'}" FontSize="14" TextColor="#001F54"/>
-                        <Label Text="{Binding Duration, StringFormat='Duration: {0} min'}" FontSize="14" TextColor="#001F54"/>
+                    <StackLayout>
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding Price, StringFormat='Price: {0:C}'}" />
                     </StackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Button Text="Book Selected Services" 
-                BackgroundColor="#001F54" 
-                TextColor="White" 
-                Padding="10" 
-                Margin="20" 
-                Clicked="OnBookServicesClicked" />
+        <Label x:Name="TotalPriceLabel" Text="Total: 0 Lei" FontSize="18" HorizontalOptions="Center" />
+
+        <Button Text="Book Appointment" Clicked="OnBookServicesClicked"/>
     </StackLayout>
 </ContentPage>
