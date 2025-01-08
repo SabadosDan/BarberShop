@@ -23,14 +23,14 @@ namespace WebAPI.Controllers
 
         // GET: api/Clients
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Clients>>> GetClients()
+        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
             return await _context.Clients.ToListAsync();
         }
 
         // GET: api/Clients/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Clients>> GetClients(int id)
+        public async Task<ActionResult<Client>> GetClients(int id)
         {
             var clients = await _context.Clients.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace WebAPI.Controllers
         // PUT: api/Clients/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutClients(int id, Clients clients)
+        public async Task<IActionResult> PutClients(int id, Client clients)
         {
             if (id != clients.ID)
             {
@@ -76,7 +76,7 @@ namespace WebAPI.Controllers
         // POST: api/Clients
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Clients>> PostClients(Clients clients)
+        public async Task<ActionResult<Client>> PostClients(Client clients)
         {
             _context.Clients.Add(clients);
             await _context.SaveChangesAsync();

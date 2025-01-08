@@ -1,0 +1,48 @@
+﻿@page
+@model WebAPI.Pages.Barbers.DetailsModel
+
+@{
+    ViewData["Title"] = "Barber Details";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Barber: @Model.Barber.FirstName @Model.Barber.LastName</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Schedule</h3>
+            @if (Model.Barber.Schedules != null && Model.Barber.Schedules.Any())
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var schedule in Model.Barber.Schedules)
+                        {
+                            <tr>
+                                <td>@schedule.Date.ToString("yyyy-MM-dd")</td>
+                                <td>@schedule.StartTime.ToString(@"hh\:mm")</td>
+                                <td>@schedule.EndTime.ToString(@"hh\:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <p>No schedules available for this barber.</p>
+            }
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-page="./Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Barbers
+        </a>
+    </div>
+</div>

@@ -1,0 +1,1 @@
+C:\gitProjects\facultate\.NET\Frizerie\Mobile\Mobile.csproj;x64

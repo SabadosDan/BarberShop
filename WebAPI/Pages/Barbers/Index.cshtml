@@ -1,0 +1,48 @@
+﻿@page
+@model WebAPI.Pages.Barbers.IndexModel
+
+@{
+    ViewData["Title"] = "Barbers";
+	bool isAdmin = User.IsInRole("Admin");
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Barbers</h1>
+
+    @if (isAdmin)
+    {
+        <div class="mb-3">
+            <a asp-page="Create" class="btn btn-success">
+                <i class="bi bi-person-plus-fill"></i> Create New Barber
+            </a>
+        </div>
+    }
+
+    <div class="row">
+        @foreach (var barber in Model.Barber)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@barber.FirstName @barber.LastName</h5>
+                        <p class="card-text">Click below to view more details.</p>
+                        <a asp-page="./Details" asp-route-id="@barber.ID" class="btn btn-primary">
+                            <i class="bi bi-eye-fill"></i> View Details
+                        </a>
+                    </div>
+                    @if (isAdmin)
+                    {
+                        <div class="card-footer text-center">
+                            <a asp-page="./Edit" asp-route-id="@barber.ID" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-fill"></i> Edit
+                            </a>
+                            <a asp-page="./Delete" asp-route-id="@barber.ID" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash-fill"></i> Delete
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
