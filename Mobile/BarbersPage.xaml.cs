@@ -33,14 +33,7 @@ public partial class BarbersPage : ContentPage
 
             BarbersListView.ItemsSource = barbers;
 
-            foreach (var barber in barbers)
-            {
-                var response = await _reviewService.GetAverageRatingAsync(barber.Id);
-
-                Console.WriteLine(response.Value);
-
-                barber.AverageRating = response.Value;
-            }
+            
         }
         catch (Exception ex)
         {

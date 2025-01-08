@@ -52,6 +52,7 @@ public partial class RegisterPage : ContentPage
             LastName = lastName,
             PhoneNumber = phoneNumber,
             Password = password,
+            Role = "Client"
         };
 
         await RegisterClientAsync(client);

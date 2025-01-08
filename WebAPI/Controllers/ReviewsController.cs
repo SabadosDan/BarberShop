@@ -47,7 +47,19 @@ namespace WebAPI.Controllers
             _context.Reviews.Add(review);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetReviewsByBarberId), new { barberId = review.BarberId }, review);
+
+            var barber = await _context.Barbers.FindAsync(review.BarberId);
+            if (barber != null)
+            {
+                var averageRating = _context.Reviews
+                    .Where(r => r.BarberId == review.BarberId)
+                    .Average(r => r.Rating);
+
+                barber.AverageRating = averageRating;
+                await _context.SaveChangesAsync();
+            }
+
+            return Ok();
         }
 
         // GET: api/Reviews/{barberId}

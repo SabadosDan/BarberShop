@@ -16,7 +16,8 @@ public class ReviewService
 
     public ReviewService()
     {
-
+        _httpClient = new HttpClient();
+        _httpClient.BaseAddress = new Uri(ApiUrl);
     }
 
     public async Task<List<Review>> GetReviewsByBarberIdAsync(int barberId)
@@ -34,30 +35,6 @@ public class ReviewService
         else
         {
             response.EnsureSuccessStatusCode();
-            return null;
-        }
-    }
-
-    public async Task<double?> GetAverageRatingAsync(int barberId)
-    {
-        try
-        {
-            var response = await _httpClient.GetAsync($"api/Rating/{barberId}");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var ratings = await response.Content.ReadFromJsonAsync<List<int>>();
-
-                if (ratings != null && ratings.Any())
-                {
-                    return ratings.Average();
-                }
-            }
-
-            return null;
-        }
-        catch
-        {
             return null;
         }
     }

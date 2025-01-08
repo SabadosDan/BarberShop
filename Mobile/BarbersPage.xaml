@@ -16,7 +16,7 @@
                                     <Label Text="{Binding Specialization}" FontSize="14" TextColor="#001F54" />
                                     <Label Text="{Binding PhoneNumber}" FontSize="14" TextColor="#001F54" />
 
-                                    <Label Text="{Binding AverageRating, StringFormat='Rating: {0:0.0}',TargetNullValue='No reviews yet'}" FontSize="16" TextColor="Orange" HorizontalOptions="Center" />
+                                    <Label Text="{Binding AverageRating, StringFormat='Rating: {0:0.0}',TargetNullValue='No reviews yet'}" FontSize="16" TextColor="Orange"/>
                                     
                                     <StackLayout Spacing="10">
                                         <Button Text="See Services" BackgroundColor="#001F54" TextColor="White" Padding="0,20" HorizontalOptions="Center"  Clicked="OnSeeServicesClicked"/>
