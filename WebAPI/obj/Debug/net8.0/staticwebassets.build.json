@@ -1,11 +1,16 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "Msy/iWvEa1NVokzdVHa+5qc8rPrBkDnvVxDFoFmmrqM=",
+=======
+  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
+>>>>>>> origin/Mobile
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
+<<<<<<< HEAD
   "DiscoveryPatterns": [
     {
       "Name": "WebAPI\\wwwroot",
@@ -5765,4 +5770,8 @@
       ]
     }
   ]
+=======
+  "DiscoveryPatterns": [],
+  "Assets": []
+>>>>>>> origin/Mobile
 }

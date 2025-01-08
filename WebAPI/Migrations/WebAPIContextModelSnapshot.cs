@@ -22,6 +22,7 @@ namespace WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+<<<<<<< HEAD
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -253,15 +254,70 @@ namespace WebAPI.Migrations
                     b.HasIndex("ServiceID");
 
                     b.ToTable("Appointments");
+=======
+            modelBuilder.Entity("WebAPI.Models.Appointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BarberId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClientPhone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsReserved")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Services")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberId");
+
+                    b.HasIndex("ClientId");
+
+                    b.ToTable("Appointment");
+>>>>>>> origin/Mobile
                 });
 
             modelBuilder.Entity("WebAPI.Models.Barber", b =>
                 {
+<<<<<<< HEAD
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+=======
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<double?>("AverageRating")
+                        .HasColumnType("float");
+>>>>>>> origin/Mobile
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -271,12 +327,28 @@ namespace WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<< HEAD
                     b.HasKey("ID");
+=======
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Specialization")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+>>>>>>> origin/Mobile
 
                     b.ToTable("Barbers");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("WebAPI.Models.Client", b =>
+=======
+            modelBuilder.Entity("WebAPI.Models.Clients", b =>
+>>>>>>> origin/Mobile
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -292,7 +364,15 @@ namespace WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -303,6 +383,7 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("WebAPI.Models.Review", b =>
                 {
+<<<<<<< HEAD
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
@@ -327,10 +408,34 @@ namespace WebAPI.Migrations
                     b.HasIndex("BarberID");
 
                     b.HasIndex("ClientID");
+=======
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BarberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberId");
+>>>>>>> origin/Mobile
 
                     b.ToTable("Reviews");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("WebAPI.Models.Schedule", b =>
                 {
                     b.Property<int>("ID")
@@ -371,6 +476,21 @@ namespace WebAPI.Migrations
 
                     b.Property<int>("Duration")
                         .HasColumnType("int");
+=======
+            modelBuilder.Entity("WebAPI.Models.Service", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BarberId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeSpan>("Duration")
+                        .HasColumnType("time");
+>>>>>>> origin/Mobile
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -379,13 +499,20 @@ namespace WebAPI.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
+<<<<<<< HEAD
                     b.HasKey("ID");
 
                     b.HasIndex("BarberID");
+=======
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberId");
+>>>>>>> origin/Mobile
 
                     b.ToTable("Services");
                 });
 
+<<<<<<< HEAD
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -456,18 +583,33 @@ namespace WebAPI.Migrations
                         .HasForeignKey("ServiceID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+=======
+            modelBuilder.Entity("WebAPI.Models.Appointment", b =>
+                {
+                    b.HasOne("WebAPI.Models.Barber", "Barber")
+                        .WithMany()
+                        .HasForeignKey("BarberId");
+
+                    b.HasOne("WebAPI.Models.Clients", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId");
+>>>>>>> origin/Mobile
 
                     b.Navigation("Barber");
 
                     b.Navigation("Client");
+<<<<<<< HEAD
 
                     b.Navigation("Service");
+=======
+>>>>>>> origin/Mobile
                 });
 
             modelBuilder.Entity("WebAPI.Models.Review", b =>
                 {
                     b.HasOne("WebAPI.Models.Barber", "Barber")
                         .WithMany("Reviews")
+<<<<<<< HEAD
                         .HasForeignKey("BarberID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -490,19 +632,31 @@ namespace WebAPI.Migrations
                         .HasForeignKey("BarberID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+=======
+                        .HasForeignKey("BarberId");
+>>>>>>> origin/Mobile
 
                     b.Navigation("Barber");
                 });
 
             modelBuilder.Entity("WebAPI.Models.Service", b =>
                 {
+<<<<<<< HEAD
                     b.HasOne("WebAPI.Models.Barber", null)
                         .WithMany("Services")
                         .HasForeignKey("BarberID");
+=======
+                    b.HasOne("WebAPI.Models.Barber", "Barber")
+                        .WithMany("Services")
+                        .HasForeignKey("BarberId");
+
+                    b.Navigation("Barber");
+>>>>>>> origin/Mobile
                 });
 
             modelBuilder.Entity("WebAPI.Models.Barber", b =>
                 {
+<<<<<<< HEAD
                     b.Navigation("Appointments");
 
                     b.Navigation("Reviews");
@@ -516,6 +670,12 @@ namespace WebAPI.Migrations
                 {
                     b.Navigation("Appointments");
                 });
+=======
+                    b.Navigation("Reviews");
+
+                    b.Navigation("Services");
+                });
+>>>>>>> origin/Mobile
 #pragma warning restore 612, 618
         }
     }

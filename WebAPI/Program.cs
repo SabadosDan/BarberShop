@@ -43,8 +43,13 @@ else
     app.UseHsts();
 }
 
+#if !DEBUG
 app.UseHttpsRedirection();
+<<<<<<< HEAD
 app.UseStaticFiles();
+=======
+#endif
+>>>>>>> origin/Mobile
 
 app.UseRouting();
 

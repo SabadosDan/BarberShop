@@ -16,6 +16,7 @@ namespace WebAPI.Data
         {
         }
 
+<<<<<<< HEAD
         public DbSet<WebAPI.Models.Client> Clients { get; set; } = default!;
         public DbSet<Barber> Barbers { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
@@ -30,5 +31,12 @@ namespace WebAPI.Data
         //        .WithMany(b => b.Services)
         //        .UsingEntity(j => j.ToTable("BarberServices"));
         //}
+=======
+        public DbSet<WebAPI.Models.Clients> Clients { get; set; } = default!;
+        public DbSet<WebAPI.Models.Barber> Barbers { get; set; } = default!;
+        public DbSet<WebAPI.Models.Service> Services { get; set; } = default!;
+        public DbSet<WebAPI.Models.Appointment> Appointment { get; set; } = default!;
+        public DbSet<WebAPI.Models.Review> Reviews { get; set; } = default!;
+>>>>>>> origin/Mobile
     }
 }

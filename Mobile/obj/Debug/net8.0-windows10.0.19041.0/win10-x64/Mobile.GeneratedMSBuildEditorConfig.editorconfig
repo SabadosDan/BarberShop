@@ -8,46 +8,120 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Mobile
-build_property.ProjectDir = C:\gitProjects\facultate\.NET\Frizerie\Mobile\
+build_property.ProjectDir = C:\Programe Codat\GitRepository\BarberShop\Mobile\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTAotOptimizerEnabled = true
-build_property.CsWinRTAotExportsEnabled = 
-build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
-build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
-build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
-build_property.CsWinRTMergeReferencedActivationFactories = 
-build_property.CsWinRTAotWarningLevel = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/gitProjects/facultate/.NET/Frizerie/Mobile/App.xaml]
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AddBarberPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AddBarberPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddBarberPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddBarberPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AddServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AddServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddServicePage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AdminBarbersDashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AdminBarbersDashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminBarbersDashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminBarbersDashboard.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AdminPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AdminPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AdminPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AdminPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/gitProjects/facultate/.NET/Frizerie/Mobile/AppShell.xaml]
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AppointmentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AppointmentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AppointmentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AppointmentsPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/gitProjects/facultate/.NET/Frizerie/Mobile/MainPage.xaml]
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/BarberRatingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.BarberRatingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BarberRatingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BarberRatingPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/BarberReviewsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.BarberReviewsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BarberReviewsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BarberReviewsPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/BarbersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.BarbersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = BarbersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = BarbersPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/EditBarberPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.EditBarberPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditBarberPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditBarberPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/EditServicePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.EditServicePage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditServicePage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditServicePage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/gitProjects/facultate/.NET/Frizerie/Mobile/Resources/Styles/Colors.xaml]
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/gitProjects/facultate/.NET/Frizerie/Mobile/Resources/Styles/Styles.xaml]
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Mobile.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/ServicesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.ServicesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ServicesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ServicesPage.xaml
+
+[C:/Programe Codat/GitRepository/BarberShop/Mobile/ShowBarberServices.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Mobile.ShowBarberServices.xaml
+build_metadata.AdditionalFiles.TargetPath = ShowBarberServices.xaml
+build_metadata.AdditionalFiles.RelativePath = ShowBarberServices.xaml

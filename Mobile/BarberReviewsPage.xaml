@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.BarberReviewsPage"
+             Title="Reviews">
+    <StackLayout Padding="10" VerticalOptions="StartAndExpand">
+        <Label Text="Reviews" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+        <ListView x:Name="ReviewsListView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Spacing="10">
+                            <Label Text="{Binding Comment}" FontSize="16"/>
+                            <Label Text="{Binding Rating}" FontSize="14" TextColor="#F2A900" />
+                            <Label Text="{Binding CreatedAt, StringFormat='{0:dd/MM/yyyy}'}" FontSize="12" TextColor="Gray" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label x:Name="NoReviewsLabel" Text="No reviews yet" 
+               IsVisible="False" FontSize="18" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+    </StackLayout>
+</ContentPage>

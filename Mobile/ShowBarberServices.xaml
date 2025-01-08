@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.ShowBarberServices"
+             Title="Barber Services">
+    <StackLayout Padding="20">
+        <Label Text="Select Services" FontSize="24" HorizontalOptions="Center" />
+
+        <DatePicker x:Name="DatePicker" />
+
+        <TimePicker x:Name="TimePicker" />
+
+        <CollectionView x:Name="ServicesCollectionView" SelectionMode="Multiple" SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Name}" />
+                        <Label Text="{Binding Price, StringFormat='Price: {0} Lei'}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Label x:Name="TotalPriceLabel" Text="Total: 0 Lei" FontSize="18" HorizontalOptions="Center" />
+
+        <Button Text="Book Appointment" Clicked="OnBookServicesClicked"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.AddBarberPage"
+             Title="AddBarberPage">
+    <StackLayout Padding="10">
+        <Entry x:Name="FirstNameEntry" Placeholder="First Name" />
+        <Entry x:Name="LastNameEntry" Placeholder="Last Name" />
+        <Entry x:Name="PhoneNumberEntry" Placeholder="Phone Number" />
+        <Entry x:Name="SpecializationEntry" Placeholder="Specialization" />
+
+        <Label Text="Select Services" />
+        <CollectionView x:Name="ServicePicker"
+                        SelectionMode="Multiple"
+                        ItemsSource="{Binding AvailableServices}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsSelected}" />
+                        <Label Text="{Binding Name}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Add Barber" Clicked="OnAddBarberClicked" />
+    </StackLayout>
+</ContentPage>

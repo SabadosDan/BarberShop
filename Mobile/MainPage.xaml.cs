@@ -1,24 +1,30 @@
-﻿namespace Mobile
+﻿using Microsoft.Maui.Controls;
+using Mobile.Utils;
+
+namespace Mobile
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnVeziServiciiClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            if (sessionManager.IsLoggedIn)
+            {
+                Navigation.PushAsync(new ServicesPage());
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
+            {
+                Navigation.PushAsync(new LoginPage());
+            }
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void OnContacteazaClicked(object sender, EventArgs e)
+        {
+
         }
     }
 

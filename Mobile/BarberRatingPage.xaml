@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.BarberRatingPage"
+             Title="BarberRatingPage">
+    <StackLayout Padding="20">
+      
+        <Label Text="Adaugă o recenzie" FontSize="Large" />
+
+        <StackLayout Orientation="Horizontal" Spacing="5">
+            <ImageButton x:Name="Star1" Source="star_empty.png" ClassId="1" Aspect="AspectFill" WidthRequest="30" HeightRequest="30" Clicked="OnStarClicked" />
+            <ImageButton x:Name="Star2" Source="star_empty.png" ClassId="2" Aspect="AspectFill" WidthRequest="30" HeightRequest="30" Clicked="OnStarClicked" />
+            <ImageButton x:Name="Star3" Source="star_empty.png" ClassId="3" Aspect="AspectFill" WidthRequest="30" HeightRequest="30" Clicked="OnStarClicked" />
+            <ImageButton x:Name="Star4" Source="star_empty.png" ClassId="4" Aspect="AspectFill" WidthRequest="30" HeightRequest="30" Clicked="OnStarClicked" />
+            <ImageButton x:Name="Star5" Source="star_empty.png" ClassId="5" Aspect="AspectFill" WidthRequest="30" HeightRequest="30" Clicked="OnStarClicked" />
+        </StackLayout>
+
+
+        <Editor x:Name="ReviewText" Placeholder="Scrie o recenzie..." HeightRequest="100" />
+
+        <Button Text="Trimite recenzie" Clicked="OnPostReviewClicked" />
+    </StackLayout>
+</ContentPage>
