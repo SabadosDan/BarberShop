@@ -74,6 +74,9 @@ namespace WebAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<double?>("AverageRating")
+                        .HasColumnType("float");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -128,6 +131,33 @@ namespace WebAPI.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("WebAPI.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BarberId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BarberId");
+
+                    b.ToTable("Reviews");
+                });
+
             modelBuilder.Entity("WebAPI.Models.Service", b =>
                 {
                     b.Property<int>("Id")
@@ -171,6 +201,15 @@ namespace WebAPI.Migrations
                     b.Navigation("Client");
                 });
 
+            modelBuilder.Entity("WebAPI.Models.Review", b =>
+                {
+                    b.HasOne("WebAPI.Models.Barber", "Barber")
+                        .WithMany("Reviews")
+                        .HasForeignKey("BarberId");
+
+                    b.Navigation("Barber");
+                });
+
             modelBuilder.Entity("WebAPI.Models.Service", b =>
                 {
                     b.HasOne("WebAPI.Models.Barber", "Barber")
@@ -182,6 +221,8 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("WebAPI.Models.Barber", b =>
                 {
+                    b.Navigation("Reviews");
+
                     b.Navigation("Services");
                 });
 #pragma warning restore 612, 618

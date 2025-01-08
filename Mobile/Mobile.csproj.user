@@ -23,6 +23,12 @@
     <MauiXaml Update="AppointmentsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="BarberRatingPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="BarberReviewsPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="BarbersPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

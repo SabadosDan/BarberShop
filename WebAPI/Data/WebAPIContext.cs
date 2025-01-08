@@ -18,5 +18,6 @@ namespace WebAPI.Data
         public DbSet<WebAPI.Models.Barber> Barbers { get; set; } = default!;
         public DbSet<WebAPI.Models.Service> Services { get; set; } = default!;
         public DbSet<WebAPI.Models.Appointment> Appointment { get; set; } = default!;
+        public DbSet<WebAPI.Models.Review> Reviews { get; set; } = default!;
     }
 }

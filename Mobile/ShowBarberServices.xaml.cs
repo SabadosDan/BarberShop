@@ -10,7 +10,6 @@ namespace Mobile
         private BarberService barberService;
         private int BarberId { get; set; }
 
-        private HttpClient httpClient;
         private ClientManager clientManager;
         public ShowBarberServices(int barberId)
         {

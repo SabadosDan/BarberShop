@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mobile.BarbersPage"
@@ -11,11 +10,19 @@
                         <StackLayout Padding="10" Spacing="10">
                             <ScrollView>
                                 <StackLayout>
+                                    
                                     <Label Text="{Binding FirstName}" FontSize="18" FontAttributes="Bold" />
-                                    <Label Text="{Binding LastName}" FontSize="16"  FontAttributes="Bold"/>
+                                    <Label Text="{Binding LastName}" FontSize="16" FontAttributes="Bold"/>
                                     <Label Text="{Binding Specialization}" FontSize="14" TextColor="#001F54" />
                                     <Label Text="{Binding PhoneNumber}" FontSize="14" TextColor="#001F54" />
-                                    <Button Text="See Services" BackgroundColor="#001F54" TextColor="White" HorizontalOptions="Center"  Clicked="OnSeeServicesClicked"/>
+
+                                    <Label Text="{Binding AverageRating, StringFormat='Rating: {0:0.0}',TargetNullValue='No reviews yet'}" FontSize="16" TextColor="Orange" HorizontalOptions="Center" />
+                                    
+                                    <StackLayout Spacing="10">
+                                        <Button Text="See Services" BackgroundColor="#001F54" TextColor="White" Padding="0,20" HorizontalOptions="Center"  Clicked="OnSeeServicesClicked"/>
+                                        <Button Text="Give Feedback" BackgroundColor="#001F54" TextColor="White" Padding="0,20" HorizontalOptions="Center" Clicked="OnGiveFeedbackClicked"/>
+                                        <Button Text="See Reviews" BackgroundColor="#F2A900" TextColor="White" Padding="0,20" HorizontalOptions="Center" Clicked="OnSeeReviewsClicked"/>
+                                    </StackLayout>
                                 </StackLayout>
                             </ScrollView>
                         </StackLayout>
@@ -23,6 +30,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 </ContentPage>

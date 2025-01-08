@@ -8,7 +8,7 @@ namespace Mobile.Models
         public void ScheduleNotification(DateTime appointmentDateTime)
         {
             
-            DateTime notificationDateTime = appointmentDateTime.AddDays(-1);
+            DateTime notificationDateTime = appointmentDateTime.AddSeconds(5);
 
             if (notificationDateTime > DateTime.Now)
             {
